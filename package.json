@@ -1,0 +1,54 @@
+{
+  "name": "crocess",
+  "description": "Make your command-line programs be easily called by externals.",
+  "version": "1.0.16",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha test/",
+    "compile": "babel src --out-dir dist",
+    "build": "rm -rf dist && npm run compile",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crocess/crocess.git"
+  },
+  "author": "Richard Way <richardway77@gmail.com>",
+  "keywords": [
+    "framework",
+    "command-line",
+    "communication",
+    "management",
+    "process",
+    "result",
+    "output",
+    "export",
+    "format",
+    "promise",
+    "async",
+    "external"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-es2017": "^6.16.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.1.0",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "lodash": "^4.16.2",
+    "yargs": "^6.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/crocess/crocess/issues"
+  },
+  "homepage": "https://github.com/crocess/crocess",
+  "directories": {
+    "test": "test"
+  }
+}

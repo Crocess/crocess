@@ -1,0 +1,4 @@
+--recursive
+--require babel-core/register
+--parameters {"foo":"bar"}
+--other-parameters {"hello":"world"}
